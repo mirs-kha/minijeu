@@ -699,7 +699,7 @@ body {
         /* width: 50%; */
         left: 0;
         right: 0;
-        top: 151px;
+        top: 167px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -713,7 +713,7 @@ body {
         margin: auto;
         left: 0;
         right: 0;
-        top: 135px;
+        top: 152px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -740,10 +740,10 @@ body {
     .resultatdurobot {
         width: 50%;
         position: absolute;
-        margin: auto;
-        left: 0;
+        /* margin: auto; */
+        left: 184px;
         right: 0;
-        top: 206px;
+        top: 255px;
         transform: rotate(180deg);
     }
 
@@ -758,16 +758,16 @@ body {
         margin: auto;
         left: 0;
         right: 0;
-        top: 504px;
+        top: 569px;
     }
 
     #choixjoueur {
         width: 50%;
         position: absolute;
-        margin: auto;
+        /* margin: auto; */
         left: 0;
         right: 0;
-        top: 554px;
+        top: 264px;
     }
 
     .div1 {
@@ -781,9 +781,9 @@ body {
         color: white;
         position: absolute;
         /* margin: auto; */
-        left: 235px;
+        left: 240px;
         right: 0;
-        top: 715px;
+        bottom: 0;
         transform: none;
     }
     .div3 {
@@ -792,10 +792,10 @@ body {
         border: solid 1px #430b27;
         color: white;
         position: absolute;
-        margin: auto;
-        left: 56px;
+        /* margin: auto; */
+        left: 120px;
         right: 0;
-        top: 715px;
+        bottom: 0;
         transform: none;
     }
     .div4 {
@@ -804,10 +804,10 @@ body {
         border: solid 1px #430b27;
         color: white;
         position: absolute;
-        margin: auto;
-        left: -173px;
+        /* margin: auto; */
+        left: 0;
         right: 0;
-        top: 715px;
+        bottom: 0;
         transform: none;
     }
 }
