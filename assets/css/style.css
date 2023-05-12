@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700');
+
+
+body {
+    font-family: 'Kalam', cursive;
+    background: #7e2752;
+    color: #f7941f;
+    text-align: center;
+}
+
+.bienvenue {
+    /* position: absolute; */
+    /* top: 72px; */
+    margin: auto;
+    width: 221px;
+}
+
+.titre {
+    text-align: center;
+}
+
+.titre img {
+    width: 225px;
+}
+
+.jouer {
+    width: 200px;
+    padding: 30px;
+    background-color: #f7941f;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: auto;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scored {
+    background-color: #430b27;
+    color: #ffffff;
+    padding: 1.4rem;
+    width: 20%;
+    height: 25px;
+    border-radius: 50px;
+    border-bottom: solid .15rem #fbe000;
+}
+
+.rounded {
+    color: #fbe000;
+    width: 20%;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.rounded p {
+    border-bottom: solid 2px red;
+}
+
+.player2 {
+    background-color: #430b27;
+    color: #ffffff;
+    padding: 1.4rem;
+    width: 20%;
+    height: 25px;
+    border-radius: 50px;
+    border-bottom: solid 0.15rem #fbe000;
+}
+
+
+
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.vs {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 100px;
+}
+
+.choixrobotrandom {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.resultatdurobot {
+    width: 20%;
+}
+
+.resultatdurobot img {
+    width: 100%;
+}
+
+.choix1 {
+    transform: rotate(-90deg);
+    width: 10rem;
+    border: solid 1px #430b27;
+    color: white;
+}
+
+.choix1 img {
+
+    width: 5rem;
+}
+
+.choix2 {
+    transform: rotate(-90deg);
+    width: 10rem;
+    border: solid 1px #430b27;
+    color: white;
+}
+
+.choix2 img {
+    width: 5rem;
+}
+
+.choix3 {
+    transform: rotate(-90deg);
+    width: 10rem;
+    border: solid 1px #430b27;
+    color: white;
+}
+
+.choix3 img {
+    width: 5rem;
+}
+
+.div1 {
+    transition: all 1s;
+}
+
+
+
+.div2 {
+    transform: rotate(90deg);
+    width: 10rem;
+    border: solid 1px #430b27;
+    color: white;
+
+}
+
+.div2 img {
+
+    width: 5rem;
+}
+
+.div3 {
+    transform: rotate(90deg);
+    width: 10rem;
+    border: solid 1px #430b27;
+    color: white;
+
+}
+
+.div3 img {
+    width: 5rem;
+}
+
+.div4 {
+    transition: none 1s;
+    transform: rotate(90deg);
+    width: 10rem;
+    border: solid 1px #430b27;
+    color: white;
+
+}
+
+.div4 img {
+    width: 5rem;
+}
+
+#choixjoueur {
+    width: 20%;
+}
+
+#choixjoueur img {
+    width: 100%;
+}
+
+
+.div10 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.versus {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.versus img {
+    width: 120px;
+}
+
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr) .2fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 30px;
+    margin: 30px;
+    }
+    
+    .div1 {grid-area: 1 / 1 / 3 / 4;padding: 30px;text-align: center;width: 10%;}
+    .div2 { grid-area: 2 / 1 / 3 / 2; padding: 30px;}
+    .div3 { grid-area: 2 / 2 / 3 / 3; padding: 30px;}
+    .div4 { grid-area: 2 / 3 / 3 / 4; padding: 30px;}
+    .div5 { grid-area: 1 / 4 / 3 / 7; padding: 30px;text-align: center;}
+    .div6 { grid-area: 2 / 4 / 3 / 5; padding: 30px;}
+    .div7 { grid-area: 2 / 5 / 3 / 6; padding: 30px;}
+    .div8 { grid-area: 2 / 6 / 3 / 7; padding: 30px;}
+    .div9 {grid-area: 4 / 1 / 6 / 3;padding: 30px;width: 20%;}
+    .div10 { grid-area: 4 / 3 / 5 / 5; padding: 30px;}
+    .div11 { grid-area: 4 / 5 / 6 / 7; padding: 30px;}
+
+    rotate-center
+    .rotate-center {
+        animation: rotate-center 0.6s ease-in-out both;
+    } */
+
+/* The Modal (background) */
+.modal {
+    display: block;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgb(0 0 0 / 78%);
+    /* Black w/ opacity */
+    transition: 1.8s all !important;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #7e2752;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #4a1531;
+    width: 70%;
+    /* overflow: hidden; */
+}
+
+/* The Close Button */
+#close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.fnpartie {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgb(0 0 0 / 85%);
+    /* Black w/ opacity */
+    transition: 1.8s all !important;
+}
+
+/* Modal Content */
+.fin-content {
+    background-color: #7e2752;
+    color: white;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    border-radius: 20px;
+    border: 3px solid #4a1531;
+    width: 70%;
+}
+
+/* The Close Button */
+#finclose {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#finclose:hover,
+#finclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#gagne {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#gagne img {
+    width: 30%;
+}
+
+.regles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.regle1 {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: right;
+}
+
+.regle2 {
+    grid-area: 1 / 2 / 2 / 3;
+    line-height: 70px;
+}
+
+.regle3 {
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: right;
+    transform: scaleX(-1);
+}
+
+.regle4 {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: right;
+}
+
+.regle5 {
+    grid-area: 2 / 2 / 3 / 3;
+    line-height: 70px;
+}
+
+.regle6 {
+    grid-area: 2 / 3 / 3 / 4;
+    text-align: right;
+    transform: scaleX(-1);
+}
+
+.regle7 {
+    grid-area: 3 / 1 / 4 / 2;
+    text-align: right;
+}
+
+.regle8 {
+    grid-area: 3 / 2 / 4 / 3;
+    line-height: 70px;
+}
+
+.regle9 {
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: right;
+    transform: scaleX(-1);
+}
+
+
+
+
+
+.dommage {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.dommagebas {
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.choixjoueursortie {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+
+
+.choixjoueursortie2 {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY2;
+    animation-name: flipInY2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+
+@-webkit-keyframes flipInY2 {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInY2 {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+
+
+
+.outCard {
+    -webkit-animation-name: outCardKey;
+    animation-name: outCardKey;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+
+}
+
+@-webkit-keyframes outCardKey {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        visibility: hidden;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes outCardKey {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        visibility: hidden;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+.inCard {
+    -webkit-animation-name: inCard;
+    animation-name: inCard;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+
+}
+
+@-webkit-keyframes inCard {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes inCard {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1190) {
+
+
+    .choixrobotrandom {
+        display: none;
+    }
+}
