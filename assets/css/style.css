@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700');
-
+.mobil{
+    display: none;
+}
 
 body {
     font-family: 'Kalam', cursive;
@@ -147,10 +149,9 @@ body {
 
 .div2 {
     transform: rotate(90deg);
-    width: 10rem;
+    /* width: 10rem; */
     border: solid 1px #430b27;
     color: white;
-
 }
 
 .div2 img {
@@ -160,10 +161,9 @@ body {
 
 .div3 {
     transform: rotate(90deg);
-    width: 10rem;
+    /* width: 10rem; */
     border: solid 1px #430b27;
     color: white;
-
 }
 
 .div3 img {
@@ -173,10 +173,9 @@ body {
 .div4 {
     transition: none 1s;
     transform: rotate(90deg);
-    width: 10rem;
+    /* width: 10rem; */
     border: solid 1px #430b27;
     color: white;
-
 }
 
 .div4 img {
@@ -668,10 +667,103 @@ body {
     }
 }
 
-@media (max-width: 1190) {
+@media (max-width: 1190px) {
 
 
     .choixrobotrandom {
         display: none;
     }
 }
+
+
+
+@media (max-width:420px) {
+
+    .mobil{
+        display: block;
+        /* position: relative; */
+    }
+
+.mobilebot{
+    transform: rotate(-90deg);
+}
+
+.grid{
+    display: none;
+
+}
+
+.infos{
+    display: none;
+}
+
+
+
+.div2 {
+    transform: none;
+    width: 100%;
+    border: solid 1px #430b27;
+    color: white;
+}
+
+.div3 {
+    transform: none;
+    width: 100%;
+    border: solid 1px #430b27;
+    color: white;
+}
+
+.div4 {
+    transform: none;
+    width: 100%;
+    border: solid 1px #430b27;
+    color: white;
+}
+
+
+.div1{
+    display: flex;
+    /* position: absolute; */
+    /* margin: auto; */
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* align-items: center; */
+}
+.robot{
+    width: 40%;
+    margin: auto;
+}
+.resultatdurobot {
+        transform: rotate(180deg);
+        width: 40%;
+        margin: auto;
+        padding-top: 30px;
+}
+
+.mescartesmobiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .carte1 { grid-area: 1 / 1 / 2 / 2; }
+    .carte2 { grid-area: 1 / 2 / 2 / 3; }
+    .carte3 { grid-area: 1 / 3 / 2 / 4; }
+    #choixjoueur {
+        width: 40%;
+        margin: auto;
+    }
+
+    .titre img {
+        width: 140px;
+    }
+
+}
+
+
