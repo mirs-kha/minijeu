@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+
+            <img src="logopet.png" class="bienvenue" alt="" />
+            <h3>Pierre, Feuilles, CHATseaux</h3>
+            <h4>Comment Jouer ?</h4>
+
+
+
+            <div class="regles">
+                <div class="regle1"><img src="minipiere.png" width="100px" alt=""> </div>
+                <div class="regle2">
+                    <p>La pierre écrase les ciseaux et gagne.</p>
+                </div>
+                <div class="regle3"><img src="miniciseaux.png" width="100px" alt=""> </div>
+                <div class="regle4"> <img src="minifeuille.png" width="100px" alt=""> </div>
+                <div class="regle5">
+                    <p>La feuille enveloppe la pierre et gagne.</p>
+                </div>
+                <div class="regle6"><img src="minipiere.png" width="100px" alt=""> </div>
+                <div class="regle7"><img src="miniciseaux.png" width="100px" alt=""> </div>
+                <div class="regle8">
+                    <p>Les ciseaux découpent la feuille et gagnent.</p>
+                </div>
+                <div class="regle9"><img src="minifeuille.png" width="100px" alt=""> </div>
+            </div>
+            <p>
+                A partir de là chaque forme en bat une autre et perd contre une autre.</p>
+            </p>
+            <div class="jouer">Je joue !</div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="findelapartie" class="fnpartie">
+        <div class="fin-content">
+            <div id="finclose">&times;</div>
+           
+            <p id="gagne"></p>
+            
+        </div>
+    </div>
+
+    <h1 class="titre"><img src="logopet.png" alt="" /></h1>
+    <div class="infos">
+        <div class="scored">Mon score : <span id="score">0</span></div>
+        <div class="rounded">Round <span class="round">1</span></div>
+        <div class="player2">Player 2</div>
+    </div>
+
+    <div class="grid">
+        <div class="div1">
+            <div id="dog" class="div2">
+                <p>Pierre</p>
+                <img src="pierre.png" alt="" />
+            </div>
+            <div id="cat" class="div3">
+                <p>feuille</p>
+                <img src="feuille.png" alt="" />
+            </div>
+            <div id="mouse" class="div4">
+                <p>ciseaux</p>
+                <img src="ciseaux.png" alt="" />
+            </div>
+        </div>
+
+        <div id="choixjoueur" class="div9">
+            <img src="card.png" alt="" />
+        </div>
+
+        <div class="vs">
+
+            <div id="resultat" class="div10">Result</div>
+        </div>
+
+        <div class="resultatdurobot">
+            <div id="robot" class="div11"><img src="anime2.gif" alt="" /></div>
+        </div>
+
+        <div class="choixrobotrandom">
+            <div class="choix1">
+                <p>Pierre</p>
+                <img src="pierre.png" alt="" />
+            </div>
+            <div class="choix2">
+                <p>feuille</p>
+                <img src="feuille.png" alt="" />
+            </div>
+            <div class="choix3">
+                <p>ciseaux</p>
+                <img src="ciseaux.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="parent" class="parent">
+        Player 1
+        <div class="div1">
+
+            <div id="dog" class="div2">Chien</div>
+            <div id="cat" class="div3"> Chat</div>
+            <div id="mouse" class="div4">Souris </div>
+
+        </div>
+
+        <div class="div5"> Adversaire</div>
+        <div class="div6"> Chien</div>
+        <div class="div7"> Chat</div>
+        <div class="div8"> Souris</div>
+        <div id="choixjoueur" class="div9"> Choix Joueur</div>
+        <div id="resultat" class="div10"> Result</div>
+        <div id="robot" class="div11"> Choix robot</div>
+    </div> -->
+
+    <!-- <script>
+
+        var score = 0;
+        var gagnant = "";
+        var player = "";
+        var round = 0;
+
+
+
+
+
+            cat.addEventListener("click", function () {
+                catplayer();
+            });
+
+
+            function catplayer() {
+                console.log(`round : ${round}`);
+
+                if (round <= 2) {
+                    var cat = "cat";
+                    player = cat;
+
+                    document.querySelector("#choixjoueur").innerHTML =
+                        '<img src="feuille.png">';
+                    console.log("yop");
+
+                }
+
+            }
+            mouse.addEventListener("click", function () {
+                mouseplayer();
+            });
+
+            function mouseplayer() {
+                console.log(`round : ${round}`);
+                if (round <= 2) {
+                    var mouse = "mouse";
+                    player = mouse;
+
+                    document.querySelector("#choixjoueur").innerHTML =
+                        '<img src="ciseaux.png">';
+                }
+            }
+
+            dog.addEventListener("click", function () {
+                dogplayer();
+            });
+
+            function dogplayer() {
+                if (round <= 2) {
+                    var dog = "dog";
+                    player = dog;
+
+                    document.querySelector("#choixjoueur").innerHTML =
+                        '<img src="pierre.png">';
+                }
+            }
+
+
+
+
+        var div1 = document.querySelector(".div1");
+        div1.addEventListener("click", function () {
+
+
+
+
+            if (round >= 3) {
+                finPartie();
+            } else {
+
+                clickplayer();
+            }
+
+        });
+
+        function clickplayer() {
+            round = round + 1;
+            roundAffiche = document.querySelector(".round");
+            roundAffiche.innerHTML = round;
+
+            var animaux = ["dog", "cat", "mouse"];
+            animaux.forEach((element) => {
+                animaux.push(element);
+            });
+            var values = animaux;
+            var valueToUse = values[Math.floor(Math.random() * values.length)];
+            var pos = animaux.indexOf(valueToUse);
+            animaux[0] = '<img src="pierre.png">';
+            animaux[1] = '<img src="feuille.png">';
+            animaux[2] = '<img src="ciseaux.png">';
+            document.querySelector("#robot").innerHTML = animaux[pos];
+            var pos = animaux.indexOf(valueToUse);
+
+            setTimeout(attendreAnime, 5000);
+
+            function attendreAnime() {
+                var anime = document.querySelector("#robot")
+                anime.innerHTML = '<img src="anime.gif" alt="">'
+                document.querySelector("#choixjoueur").innerHTML = '<img src="card.png" alt="">'
+
+
+            }
+
+            if (animaux[pos] == player) {
+                var nul = document.querySelector("#resultat");
+                nul.innerHTML = "match nul";
+            } else if (
+                (player == "dog" && animaux[pos] == "mouse") ||
+                (player == "cat" && animaux[pos] == "dog") ||
+                (player == "mouse" && animaux[pos] == "cat")
+            ) {
+                var win = document.querySelector("#resultat");
+                win.innerHTML = "win";
+                score = score + 1;
+
+                var monscore = document.querySelector("#score");
+                monscore.innerHTML = score;
+            } else if (
+                (animaux[pos] == "dog" && player == "mouse") ||
+                (animaux[pos] == "cat" && player == "dog") ||
+                (animaux[pos] == "mouse" && player == "cat")
+            ) {
+                var loose = document.querySelector("#resultat");
+                loose.innerHTML = "lose";
+                console.log("you lose");
+
+                //   if (score > 0) {
+                //     score = score - 1;
+
+                //     var monscore = document.querySelector("#score");
+                //     monscore.innerHTML = score;
+                //   }
+            } else {
+                console.log("none");
+            }
+        }
+
+        function finPartie() {
+            var finclose = document.querySelector("#finclose");
+            if (score > 1) {
+                console.log("finaleeeee");
+                var final = "victoire";
+                document.querySelector("#gagne").innerHTML = final;
+            } else {
+                var looser = "you are a loser";
+                document.querySelector("#gagne").innerHTML = looser;
+            }
+            document.querySelector(".fnpartie").style.display = "block";
+            finclose.addEventListener("click", function () {
+                fermerFinModal();
+            });
+
+            function fermerFinModal() {
+                document.querySelector(".fnpartie").style.display = "none";
+            }
+        }
+
+        var close = document.querySelector(".jouer");
+        close.addEventListener("click", function () {
+            fermerModal();
+        });
+
+        function fermerModal() {
+            document.querySelector(".modal").style.display = "none";
+        }
+    </script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
