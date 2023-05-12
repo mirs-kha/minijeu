@@ -783,7 +783,7 @@ body {
         /* margin: auto; */
         left: 240px;
         right: 0;
-        bottom: 0;
+        top: 625px;
         transform: none;
     }
     .div3 {
@@ -795,7 +795,7 @@ body {
         /* margin: auto; */
         left: 120px;
         right: 0;
-        bottom: 0;
+        top: 625px;
         transform: none;
     }
     .div4 {
@@ -807,9 +807,14 @@ body {
         /* margin: auto; */
         left: 0;
         right: 0;
-        bottom: 0;
+        top: 625px;
         transform: none;
     }
+
+    .modal{
+        display:none;
+    }
+
 }
 
 
