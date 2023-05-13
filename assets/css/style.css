@@ -79,7 +79,6 @@ body {
 .grid {
     display: flex;
     justify-content: space-around;
-    height: 100vh;
 }
 
 .div1 {
@@ -688,24 +687,21 @@ body {
     }
 
     .scored {
-        background: none;
+        background-color: #430b27;
         color: #ffffff;
-        padding: 18px;
-        text-align: left;
+        padding: 1.4rem;
         width: 80%;
-        font-size: 1.2rem;
-        font-weight: 700;
-        /* height: 25px; */
-        /* border-radius: 50px; */
-        border-bottom: none;
+        height: 25px;
+        border-radius: 50px;
+        border-bottom: solid 0.15rem #fbe000;
         position: absolute;
         margin: auto;
         /* width: 50%; */
         left: 0;
-        /* right: 0; */
-        top: 55px;
-        /* margin-left: auto; */
-        /* margin-right: auto; */
+        right: 0;
+        top: 151px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .rounded {
@@ -714,13 +710,12 @@ body {
         font-size: 1.5rem;
         font-weight: 700;
         position: absolute;
-        /* margin: auto; */
-        left: -17px;
+        margin: auto;
+        left: 0;
         right: 0;
-        text-align: right;
-        top: 64px;
-        /* margin-left: auto; */
-        /* margin-right: auto; */
+        top: 135px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .player2 {
@@ -745,10 +740,10 @@ body {
     .resultatdurobot {
         width: 50%;
         position: absolute;
-        /* margin: auto; */
+        margin: auto;
         left: 0;
         right: 0;
-        top: 116px;
+        top: 206px;
         transform: rotate(180deg);
     }
 
@@ -762,27 +757,22 @@ body {
         position: absolute;
         margin: auto;
         left: 0;
-        right: 49px;
-        top: 125px;
-        text-align: right;
+        right: 0;
+        top: 504px;
     }
 
     #choixjoueur {
         width: 50%;
         position: absolute;
-        /* margin: auto; */
-        left: 181px;
+        margin: auto;
+        left: 0;
         right: 0;
-        top: 174px;
+        top: 554px;
     }
 
     .div1 {
         display: flex;
         width: 100%;
-        display: flex;
-        width: 100%;
-        position: absolute;
-        bottom: -3px;
     }
     .div2 {
         transition: none 1s;
@@ -791,9 +781,9 @@ body {
         color: white;
         position: absolute;
         /* margin: auto; */
-        left: 240px;
+        left: 192px;
         right: 0;
-        bottom: 0;
+        top: 723px;
         transform: none;
     }
     .div3 {
@@ -802,28 +792,24 @@ body {
         border: solid 1px #430b27;
         color: white;
         position: absolute;
-        /* margin: auto; */
-        left: 120px;
+        margin: auto;
+        left: 65px;
         right: 0;
-        bottom: 0;
+        top: 719px;
         transform: none;
     }
     .div4 {
         transition: none 1s;
-        width: 33%;
+        width: 20%;
         border: solid 1px #430b27;
         color: white;
         position: absolute;
-        /* margin: auto; */
-        left: 0;
+        margin: auto;
+        left: -120px;
         right: 0;
-        bottom: 0;
+        top: 715px;
         transform: none;
     }
-
-    .modal{
-        display:none;
-    }
-
 }
+
 
