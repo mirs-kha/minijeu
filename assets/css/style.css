@@ -683,7 +683,7 @@ body {
     }
 
     .titre img {
-        width: 149px;
+        width: 30%;
     }
 
     .scored {
@@ -702,7 +702,7 @@ body {
         /* width: 50%; */
         left: 0;
         /* right: 0; */
-        top: 55px;
+        top: 36px;
         /* margin-left: auto; */
         /* margin-right: auto; */
     }
@@ -717,7 +717,7 @@ body {
         left: -17px;
         right: 0;
         text-align: right;
-        top: 64px;
+        top: 36px;
         /* margin-left: auto; */
         /* margin-right: auto; */
     }
@@ -761,8 +761,10 @@ body {
         position: absolute;
         margin: auto;
         left: 0;
-        right: 49px;
+        width: 100%;
+        /* right: 52px; */
         top: 125px;
+        left: -22px;
         text-align: right;
     }
 
@@ -770,18 +772,19 @@ body {
         width: 50%;
         position: absolute;
         /* margin: auto; */
-        left: 181px;
+        /* left: 181px; */
         right: 0;
         top: 174px;
     }
 
     .div1 {
-        display: flex;
-        width: 100%;
-        display: flex;
+        /* display: flex; */
+        /* width: 100% !important; */
+        /* display: flex; */
         width: 100%;
         position: absolute;
         bottom: -3px;
+        height: 80px;
     }
     .div2 {
         transition: none 1s;
@@ -790,31 +793,37 @@ body {
         color: white;
         position: absolute;
         /* margin: auto; */
-        left: 240px;
+        /* left: 240px; */
         right: 0;
+        background: #430b27;
         bottom: 0;
+        border-radius: 20px 20px 0 0;
         transform: none;
     }
     .div3 {
         transition: none 1s;
         width: 33%;
+        background: #4e1230;
         border: solid 1px #430b27;
         color: white;
         position: absolute;
-        /* margin: auto; */
-        left: 120px;
+        margin: auto;
+        left: 0;
         right: 0;
         bottom: 0;
+        border-radius: 20px 20px 0 0;
         transform: none;
     }
     .div4 {
         transition: none 1s;
         width: 33%;
         border: solid 1px #430b27;
+        background: #5c1d3d;
         color: white;
         position: absolute;
         /* margin: auto; */
         left: 0;
+        border-radius: 20px 20px 0 0;
         right: 0;
         bottom: 0;
         transform: none;
