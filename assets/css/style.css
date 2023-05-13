@@ -79,6 +79,7 @@ body {
 .grid {
     display: flex;
     justify-content: space-around;
+    height: 100vh;
 }
 
 .div1 {
@@ -792,7 +793,7 @@ body {
         /* margin: auto; */
         left: 240px;
         right: 0;
-        top: 565px;
+        bottom: 0;
         transform: none;
     }
     .div3 {
@@ -804,7 +805,7 @@ body {
         /* margin: auto; */
         left: 120px;
         right: 0;
-        top: 565px;
+        bottom: 0;
         transform: none;
     }
     .div4 {
@@ -816,7 +817,7 @@ body {
         /* margin: auto; */
         left: 0;
         right: 0;
-        top: 565px;
+        bottom: 0;
         transform: none;
     }
 
