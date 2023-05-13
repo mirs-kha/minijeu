@@ -124,7 +124,10 @@ function finPartie() {
     <button type="button" value = "Rafraîchir" onclick="history.go(0)" class="jouer" style="margin-bottom: 144px;">REJOUER?</button>
     <img class="dommagebas" src="../minijeu/assets/img/dommagebas.png">`;
     const finclose = document.querySelector("#finclose")
-    const final = "<img src='../minijeu/assets/img/win.png'>"
+    const final = `<img src="../minijeu/assets/img/winhaut.png">
+    <p class="dommage">Bravo !</p>
+    <button type="button" value = "Rafraîchir" onclick="history.go(0)" class="jouer" style="margin-bottom: 144px;">REJOUER?</button>
+    <img class="dommagebas" src="../minijeu/assets/img/winbas.png">`;
     if (score > 1) {
         document.querySelector("#gagne").innerHTML = final
     } else {
