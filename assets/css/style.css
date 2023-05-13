@@ -687,35 +687,39 @@ body {
     }
 
     .scored {
-        background-color: #430b27;
+        background: none;
         color: #ffffff;
-        padding: 1.4rem;
+        /* padding: 1.4rem; */
+        text-align: left;
         width: 80%;
-        height: 25px;
-        border-radius: 50px;
-        border-bottom: solid 0.15rem #fbe000;
+        font-size: 1.4rem;
+        font-weight: 700;
+        /* height: 25px; */
+        /* border-radius: 50px; */
+        border-bottom: none;
         position: absolute;
         margin: auto;
         /* width: 50%; */
         left: 0;
-        right: 0;
-        top: 167px;
-        margin-left: auto;
-        margin-right: auto;
+        /* right: 0; */
+        top: 118px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
     }
 
     .rounded {
         color: #fbe000;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 700;
         position: absolute;
-        margin: auto;
-        left: 0;
+        /* margin: auto; */
+        left: -23px;
         right: 0;
-        top: 152px;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: right;
+        top: 130px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
     }
 
     .player2 {
@@ -741,9 +745,9 @@ body {
         width: 50%;
         position: absolute;
         /* margin: auto; */
-        left: 184px;
+        left: 0;
         right: 0;
-        top: 255px;
+        top: 171px;
         transform: rotate(180deg);
     }
 
@@ -758,16 +762,16 @@ body {
         margin: auto;
         left: 0;
         right: 0;
-        top: 569px;
+        top: 513px;
     }
 
     #choixjoueur {
         width: 50%;
         position: absolute;
         /* margin: auto; */
-        left: 0;
+        left: 181px;
         right: 0;
-        top: 264px;
+        top: 220px;
     }
 
     .div1 {
@@ -787,7 +791,7 @@ body {
         /* margin: auto; */
         left: 240px;
         right: 0;
-        top: 625px;
+        top: 565px;
         transform: none;
     }
     .div3 {
@@ -799,7 +803,7 @@ body {
         /* margin: auto; */
         left: 120px;
         right: 0;
-        top: 625px;
+        top: 565px;
         transform: none;
     }
     .div4 {
@@ -811,7 +815,7 @@ body {
         /* margin: auto; */
         left: 0;
         right: 0;
-        top: 625px;
+        top: 565px;
         transform: none;
     }
 
