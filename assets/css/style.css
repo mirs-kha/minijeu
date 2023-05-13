@@ -833,5 +833,28 @@ body {
         display:none;
     }
 
+    #gagne img {
+    width: 100%;
 }
 
+    .dommage {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+    .jouer{
+width: 100%;
+    padding: 19px;
+    background-color: #f7941f;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: auto;
+    margin-bottom: 75px !important;
+    border: none;
+    margin-bottom: 20px;
+    }
+
+    #finclose{
+        display:none;
+    }
